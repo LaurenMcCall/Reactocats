@@ -1,15 +1,5 @@
 :root {
   font: 16px / 1 sans-serif;
-
-  // SDG brand colors
-  --asphalt: #2f3737;
-  --bright-sky: #80ced2;
-  --lime: #b1d133;
-  --night-sky: #85577e;
-  --sand: #f7f0da;
-  --sea: #5a9090;
-  --sun: #d5562b;
-  --tangerine: #f99d1b;
 }
 
 html {
@@ -19,4 +9,185 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background-color: #fafbfc;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #fafbfc !important;
+}
+
+header {
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.75);
+  position: sticky;
+  top: 0;
+  background-clip: padding-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+  display: block;
+}
+section {
+  background-color: #fafbfc !important;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.mr-3px {
+  margin-right: 3px;
+}
+.ml-auto {
+  margin-left: auto;
+}
+
+.d-flex {
+  display: flex;
+}
+.p-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.container {
+  width: auto;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.p-24 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.mr-24 {
+  margin-right: 24px;
+}
+.mr-16 {
+  margin-right: 16px;
+}
+
+.bold {
+  font-weight: 600;
+  font-size: 16px;
+}
+.gray-text {
+  color: #586069;
+}
+.display-none {
+  display: none;
+}
+
+li {
+  list-style: none;
+  color: #586069;
+  font-size: 16px;
+}
+a {
+  color: #24292e;
+  text-decoration: none;
+  background-color: transparent;
+}
+a header:hover {
+  text-decoration: underline;
+}
+
+article {
+  flex-wrap: wrap !important;
+  flex-direction: column;
+  display: block;
+  padding: 8px;
+  background-color: #fafbfc !important;
+  margin-bottom: 12px;
+}
+
+article ul li a img {
+  display: flex;
+  align-items: flex-start;
+}
+article > a img {
+  height: auto;
+  display: block;
+  max-width: 100%;
+  border-radius: 9px !important;
+  border-style: none;
+  box-sizing: border-box;
+  border: 1px #e1e4e8 solid;
+  padding: 8px;
+  background-color: #fff;
+}
+article ul li img {
+  display: flex;
+  align-items: flex-end;
+}
+article ul {
+  display: flex;
+  padding-left: 0;
+  justify-content: space-between;
+}
+article ul li a img {
+  border-radius: 3px !important;
+}
+
+/* Responsive design */
+
+@media (min-width: 544px) {
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+    /* margin-right: 8px; */
+    /* margin-left: -8px; */
+  }
+  /* section article {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    padding: 8px;
+    background-color: #fff;
+    margin-bottom: 12px;
+  }
+
+  main section article {
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+  } */
+}
+@media (min-width: 768px) {
+  /* display: block; */
+  /* .mr-16-media {
+    margin-right: 16px;
+  } */
+  .p-16-media {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .d-media-block {
+    display: block;
+  }
+  article {
+    display: block !important;
+    float: left;
+    flex-wrap: wrap !important;
+    width: auto;
+    /* height: auto; */
+    flex-direction: column;
+    padding: 8px;
+    background-color: #fff;
+    margin-bottom: 12px;
+    margin-right: 16px;
+    /* padding-right: 16px;
+    padding-left: 16px;
+    box-sizing: border-box; */
+  }
+  section {
+    background-color: #fafbfc !important;
+  }
 }
