@@ -144,6 +144,7 @@ article ul li a img {
     /* margin-right: 8px; */
     /* margin-left: -8px; */
   }
+
   /* section article {
     display: flex !important;
     flex-wrap: wrap !important;
@@ -162,15 +163,16 @@ article ul li a img {
 }
 @media (min-width: 768px) {
   /* display: block; */
-  /* .mr-16-media {
-    margin-right: 16px;
-  } */
+  // .mr-16-media {
+  //   margin-right: 16px;
+  // }
   .p-16-media {
     padding-top: 16px;
     padding-bottom: 16px;
   }
   .d-media-block {
     display: block;
+    margin-left: 16px;
   }
   article {
     display: block !important;

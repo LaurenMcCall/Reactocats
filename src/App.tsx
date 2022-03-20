@@ -1,8 +1,10 @@
 import React from 'react'
+import { Octocat } from './components/Octocat'
 
 export function App() {
   return (
     <div>
+      <Octocat />
       <body>
         <header>
           <div className="container p-24">
@@ -37,7 +39,7 @@ export function App() {
                 Follow us on Twitter
               </a>
               <a
-                className="display-none d-media-block p-16-media mr-16-media"
+                className="display-none d-media-block p-16-media "
                 href="https://github.com/"
               >
                 Back to GitHub.com
