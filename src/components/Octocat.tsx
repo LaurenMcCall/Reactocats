@@ -3,13 +3,13 @@ import React from 'react'
 type OctocatProps = {
   link: string
   image: string
-  imageAltText: string
+  // imageAltText: string
   number: string
   numberLink: string
   name: string
   creatorLink: string
   creatorAvatar: string
-  creatorAltText: string
+  // creatorAltText: string
 }
 
 export function Octocat(props: OctocatProps) {
@@ -20,7 +20,7 @@ export function Octocat(props: OctocatProps) {
           src={props.image}
           width="400"
           height="400"
-          alt={props.imageAltText}
+          // alt={props.imageAltText}
         />
       </a>
 
@@ -37,7 +37,7 @@ export function Octocat(props: OctocatProps) {
               src={props.creatorAvatar}
               width="24px"
               height="24px"
-              alt={props.creatorAltText}
+              // alt={props.creatorAltText}
             />
           </a>
         </li>

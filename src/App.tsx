@@ -49,45 +49,16 @@ export function App() {
 
         <main>
           <section className="container p-24">
-            {/* <article>
-              <a href="https://octodex.github.com//terracottocat/">
-                <img
-                  src="https://octodex.github.com//images/Terracottocat_Single.png"
-                  width="400"
-                  height="400"
-                  alt="Terracottocat"
-                />
-              </a>
-
-              <ul>
-                <li>
-                  #149:
-                  <a href="https://octodex.github.com//terracottocat/">
-                    <strong>Terracottocat</strong>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/chubbmo">
-                    <img
-                      src="https://github.com/chubbmo.png"
-                      width="24px"
-                      height="24px"
-                      alt="chubbmo"
-                    />
-                  </a>
-                </li>
-              </ul>
-            </article> */}
             <Octocat
               link="https://octodex.github.com//terracottocat/"
               image="https://octodex.github.com//images/Terracottocat_Single.png"
-              imageAltText="Terracottocat"
+              // imageAltText="Terracottocat"
               number="#149:"
               numberLink="https://octodex.github.com//terracottocat/"
               name="Terracottocat"
               creatorLink="https://github.com/chubbmo"
               creatorAvatar="https://github.com/chubbmo.png"
-              creatorAltText="chubbmo"
+              // creatorAltText="chubbmo"
             />
 
             <article>
