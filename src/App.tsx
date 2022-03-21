@@ -4,7 +4,6 @@ import { Octocat } from './components/Octocat'
 export function App() {
   return (
     <div>
-      <Octocat />
       <body>
         <header>
           <div className="container p-24">
@@ -50,7 +49,7 @@ export function App() {
 
         <main>
           <section className="container p-24">
-            <article>
+            {/* <article>
               <a href="https://octodex.github.com//terracottocat/">
                 <img
                   src="https://octodex.github.com//images/Terracottocat_Single.png"
@@ -78,7 +77,18 @@ export function App() {
                   </a>
                 </li>
               </ul>
-            </article>
+            </article> */}
+            <Octocat
+              link="https://octodex.github.com//terracottocat/"
+              image="https://octodex.github.com//images/Terracottocat_Single.png"
+              imageAltText="Terracottocat"
+              number="#149:"
+              numberLink="https://octodex.github.com//terracottocat/"
+              name="Terracottocat"
+              creatorLink="https://github.com/chubbmo"
+              creatorAvatar="https://github.com/chubbmo.png"
+              creatorAltText="chubbmo"
+            />
 
             <article>
               <a href="https://octodex.github.com//octogatos/">
@@ -301,3 +311,4 @@ export function App() {
     </div>
   )
 }
+export default App
