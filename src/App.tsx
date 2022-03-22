@@ -63,9 +63,9 @@ export function App() {
         <main>
           <section className="container p-24">{octocatsFromData}</section>
         </main>
-        <footer>
+        {/* <footer>
           <p>© 2013 – 2020 GitHub, Inc. All rights reserved.</p>
-        </footer>
+        </footer> */}
       </body>
     </div>
   )

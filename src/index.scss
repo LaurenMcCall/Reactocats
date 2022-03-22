@@ -16,7 +16,6 @@ body {
   line-height: 1.5;
   background-color: #fafbfc !important;
 }
-// QUESTION: why isn't header staying sticky after a certain width?
 header {
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.75);
@@ -169,13 +168,13 @@ article ul li a img {
   } */
 }
 @media (min-width: 768px) {
-  // .mr-16-media {
-  //   margin-right: 16px;
-  // }
-  // .p-16-media {
-  //   padding-top: 16px;
-  //   padding-bottom: 16px;
-  // }
+  .mr-16-media {
+    margin-right: 16px;
+  }
+  .p-16-media {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
   .d-media-block {
     display: block;
     margin-left: 16px;
@@ -185,20 +184,22 @@ article ul li a img {
     display: block !important;
     float: left;
     flex-wrap: wrap !important;
-    width: 50%;
+    width: auto;
+    // max-width: 100%;
+    // height: auto;
     flex-direction: column;
     background-color: #fff;
-    // margin-bottom: 12px;
-    // margin-right: 16px;
-    padding-right: 16px !important;
-    padding-left: 16px !important;
+    margin-bottom: 12px;
+    margin-right: 16px;
+    // padding-right: 16px !important;
+    // padding-left: 16px !important;
     box-sizing: border-box;
   }
 
   section {
     background-color: #fafbfc !important;
   }
-
+  // QUESTION: Header still not sticky
   // header {
   //   margin-bottom: 40px;
   //   position: fixed;
