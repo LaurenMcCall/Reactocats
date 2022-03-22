@@ -10,9 +10,10 @@ export function App() {
       link={octocat.link}
       image={octocat.image}
       name={octocat.name}
+      authors={octocat.authors}
       // QUESTION: Explain this more please
-      authorLink={octocat.authors[0].link}
-      authorImage={octocat.authors[0].image}
+      // authorLink={octocat.authors[0].link}
+      // authorImage={octocat.authors[0].image}
     />
   ))
   return (

@@ -7,8 +7,13 @@ type OctocatProps = {
   number: number
   // numberLink: string
   name: string
-  authorLink: string
-  authorImage: string
+  authors: {
+    link: string
+    image: string
+  }[]
+
+  // authorLink: string
+  // authorImage: string
   // creatorAltText: string
 }
 
@@ -31,16 +36,21 @@ export function Octocat(props: OctocatProps) {
             <strong> {props.name}</strong>
           </a>
         </li>
-        <li>
-          <a href={props.authorLink}>
-            <img
-              src={props.authorImage}
-              width="24px"
-              height="24px"
-              // alt={props.creatorAltText}
-            />
-          </a>
-        </li>
+
+        {props.authors.map((author, key) => {
+          return (
+            <li key={props.number}>
+              <a href={author.link}>
+                <img
+                  src={author.image}
+                  width="24px"
+                  height="24px"
+                  // alt={props.creatorAltText}
+                />
+              </a>
+            </li>
+          )
+        })}
       </ul>
     </article>
   )
