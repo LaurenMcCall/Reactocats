@@ -127,14 +127,26 @@ article ul {
 article ul li a img {
   border-radius: 3px !important;
 }
-
+footer {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  // margin-top: 40px;
+}
+footer p {
+  // position: initial;
+}
 /* Responsive design */
 
 @media (min-width: 544px) {
   header {
     // position: sticky;
     // margin-bottom: 40px;
-    position: sticky;
+    // position: sticky;
     width: 100%;
     top: 0;
   }
@@ -209,7 +221,7 @@ article ul li a img {
   header {
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.75);
-    position: sticky;
+    // position: sticky;
     top: 0;
     background-clip: padding-box;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
