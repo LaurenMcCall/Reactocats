@@ -4,13 +4,23 @@ type OctocatProps = {
   link: string
   image: string
   // imageAltText: string
-  number: string
-  numberLink: string
+  number: number
+  // numberLink: string
   name: string
-  creatorLink: string
-  creatorAvatar: string
+  authorLink: string
+  authorImage: string
   // creatorAltText: string
 }
+// "number": 153,
+// "name": "NUXtocat",
+// "image": "https://octodex.github.com//images/NUX_Octodex.gif",
+// "link": "https://octodex.github.com//nuxtocat/",
+// "authors": [
+//   {
+//     "link": "https://github.com/cameronfoxly",
+//     "image": "https://github.com/cameronfoxly.png"
+//   }
+// ]
 
 export function Octocat(props: OctocatProps) {
   return (
@@ -26,15 +36,15 @@ export function Octocat(props: OctocatProps) {
 
       <ul>
         <li>
-          {props.number}
-          <a href={props.numberLink}>
+          #{props.number}:
+          <a href={props.link}>
             <strong>{props.name}</strong>
           </a>
         </li>
         <li>
-          <a href={props.creatorLink}>
+          <a href={props.authorLink}>
             <img
-              src={props.creatorAvatar}
+              src={props.authorImage}
               width="24px"
               height="24px"
               // alt={props.creatorAltText}

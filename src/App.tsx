@@ -1,7 +1,20 @@
 import React from 'react'
 import { Octocat } from './components/Octocat'
+import octocats from './octocats.json'
 
 export function App() {
+  const octocatsFromData = octocats.map((octocat) => (
+    <Octocat
+      key={octocat.number}
+      number={octocat.number}
+      link={octocat.link}
+      image={octocat.image}
+      name={octocat.name}
+      // QUESTION: Explain this more please
+      authorLink={octocat.authors[0].link}
+      authorImage={octocat.authors[0].image}
+    />
+  ))
   return (
     <div>
       <body>
@@ -49,17 +62,19 @@ export function App() {
 
         <main>
           <section className="container p-24">
-            <Octocat
+            {/* <Octocat
               link="https://octodex.github.com//terracottocat/"
               image="https://octodex.github.com//images/Terracottocat_Single.png"
               // imageAltText="Terracottocat"
-              number="#149:"
-              numberLink="https://octodex.github.com//terracottocat/"
+              number="149"
+              // QUESTION: how to get around this? NM
+              // link="https://octodex.github.com//terracottocat/"
               name="Terracottocat"
-              creatorLink="https://github.com/chubbmo"
-              creatorAvatar="https://github.com/chubbmo.png"
+              authorLink="https://github.com/chubbmo"
+              authorImage="https://github.com/chubbmo.png"
               // creatorAltText="chubbmo"
-            />
+            /> */}
+            {octocatsFromData}
 
             <article>
               <a href="https://octodex.github.com//octogatos/">
