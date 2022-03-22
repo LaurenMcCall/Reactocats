@@ -28,6 +28,8 @@ header {
   display: block;
 }
 section {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #fafbfc !important;
 }
 nav {
