@@ -128,10 +128,6 @@ article ul {
 article ul li a img {
   border-radius: 3px !important;
 }
-// QUESTION: Trying to have space between number and cat name.
-// main section.container.p24 article ul li a {
-//   margin-left: 5px;
-// }
 
 /* Responsive design */
 
@@ -173,33 +169,32 @@ article ul li a img {
   } */
 }
 @media (min-width: 768px) {
-  /* display: block; */
   // .mr-16-media {
   //   margin-right: 16px;
   // }
-  .p-16-media {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
+  // .p-16-media {
+  //   padding-top: 16px;
+  //   padding-bottom: 16px;
+  // }
   .d-media-block {
     display: block;
     margin-left: 16px;
   }
+
   article {
     display: block !important;
     float: left;
     flex-wrap: wrap !important;
-    width: auto;
-    /* height: auto; */
+    width: 50%;
     flex-direction: column;
-    padding: 8px;
     background-color: #fff;
-    margin-bottom: 12px;
-    margin-right: 16px;
-    /* padding-right: 16px;
-    padding-left: 16px;
-    box-sizing: border-box; */
+    // margin-bottom: 12px;
+    // margin-right: 16px;
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+    box-sizing: border-box;
   }
+
   section {
     background-color: #fafbfc !important;
   }
