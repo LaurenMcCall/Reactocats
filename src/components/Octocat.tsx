@@ -39,7 +39,7 @@ export function Octocat(props: OctocatProps) {
 
         {props.authors.map((author, key) => {
           return (
-            <li key={props.number}>
+            <li key={key}>
               <a href={author.link}>
                 <img
                   src={author.image}
