@@ -126,8 +126,14 @@ article ul {
   padding-left: 0;
   justify-content: space-between;
 }
+article ul div {
+  display: flex;
+  padding-left: 0;
+  justify-content: space-between;
+}
 article ul li a img {
   border-radius: 3px !important;
+  margin-left: 4px;
 }
 footer {
   display: flex;

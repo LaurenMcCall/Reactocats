@@ -16,6 +16,7 @@ type OctocatProps = {
   // authorImage: string
   // creatorAltText: string
 }
+let index = 0
 
 export function Octocat(props: OctocatProps) {
   return (
@@ -37,20 +38,23 @@ export function Octocat(props: OctocatProps) {
           </a>
         </li>
 
-        {props.authors.map((author, key) => {
-          return (
-            <li key={key}>
-              <a href={author.link}>
-                <img
-                  src={author.image}
-                  width="24px"
-                  height="24px"
-                  // alt={props.creatorAltText}
-                />
-              </a>
-            </li>
-          )
-        })}
+        <div>
+          {props.authors.map((author) => {
+            console.log(`${props.name} - ${index}`)
+            return (
+              <li key={index}>
+                <a href={author.link}>
+                  <img
+                    src={author.image}
+                    width="24px"
+                    height="24px"
+                    // alt={props.creatorAltText}
+                  />
+                </a>
+              </li>
+            )
+          })}
+        </div>
       </ul>
     </article>
   )
